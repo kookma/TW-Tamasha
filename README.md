@@ -1,7 +1,4 @@
 # Tamasha
-Slideshow, and presentation using Tiddlywiki
-
-# Tamasha
 Shiraz is a small [Tiddlywiki](https://tiddlywiki.com/) app and plugin to create presentation and slideshow.
 
 # Tutorial
