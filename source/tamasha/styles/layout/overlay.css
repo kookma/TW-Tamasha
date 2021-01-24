@@ -1,0 +1,13 @@
+.tamasha-overlay {
+	height: 0px; 
+	position:fixed;
+	top:0; left:0;
+	z-index:1500;
+	overflow-y: hidden;
+	width:100%;
+}
+
+.tamasha-overlay.open {
+	height: 100%;     /* use full screen height */
+	max-height:100%;
+}

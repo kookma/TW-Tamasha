@@ -1,0 +1,13 @@
+.tamasha-slide-footer{	
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	bottom:1rem;
+	max-width:100%;
+	overflow:hidden;
+	text-align:center;
+	display:inline-block;
+	max-width:40%;
+}

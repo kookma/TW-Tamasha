@@ -1,0 +1,51 @@
+created: 20210122151112086
+modified: 20210124162322025
+tags: $:/tags/Macro
+title: $:/plugins/kookma/tamasha/macros/presenter
+type: text/vnd.tiddlywiki
+
+\define presenter(tag, width:"640px", height:"480px", loop:"no", footer:"", template:"vanilla", theme:"vanda", state)
+\import [all[tiddlers+shadows]tag[$:/tags/Macro/Tamasha]]
+<$vars
+ mainTag=<<__tag__>>
+ contentWidth=<<__width__>>
+ contentHeight=<<__height__>>
+ loopShow=<<__loop__>>
+ slideFooter=<<__footer__>> 
+ myTemplate={{{[all[tiddlers+shadows]tag[$:/tags/Tamasha/Template]search:title<__template__>] ~$:/plugins/kookma/tamasha/template/simple }}}   
+ myTheme={{{[[$:/plugins/kookma/tamasha/theme/composite]getindex<__theme__>] ~[<__theme__>] }}}
+ myState={{{ [<__state__>trim[]is[blank]then[presenter]else<__state__>addsuffix<qualify>] }}}
+ numberSlides={{{[tag<__tag__>count[]]}}}
+ >
+<$keyboard key="F" actions=<<toggle-presentation-mode>> >
+<$keyboard key="Q" actions=<<toggle-author-mode>> >
+<$keyboard key="right down enter space" actions=<<nextSlide>> >
+<$keyboard key="left up backspace"  actions=<<previousSlide>> >
+
+<div class=<<myTheme>> ><!-- apply theme -->
+<div class=<<presentation-frame-class>> tabindex=1 >
+
+<!-- Presentation Mode -->
+<div class={{{[<statePresentTid>getindex[overlayClass]] ~[[tamasha-overlay]]}}} >
+<$transclude tiddler="$:/plugins/kookma/tamasha/ui/slide" mode=block/>
+</div>
+
+<!-- Author mode -->
+<div><!-- reserved for further development-->
+<$transclude tiddler="$:/plugins/kookma/tamasha/ui/slide" mode=block/>
+</div>
+
+</div>
+</div>
+
+</$keyboard>
+</$keyboard>
+</$keyboard>
+</$keyboard>
+
+<$reveal type="match" stateTitle=<<statePresentTid>> stateIndex="mode" text="presentation-mode">
+<style>body { overflow: hidden; /* Hide scrollbars */ }</style>
+</$reveal>
+
+</$vars>
+\end

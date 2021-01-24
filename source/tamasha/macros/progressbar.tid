@@ -1,0 +1,11 @@
+created: 20210112195417563
+modified: 20210122144814395
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/macros/progressbar
+type: text/vnd.tiddlywiki
+
+\define progress(pct)
+<div class="tamasha-progress">
+	<span class="bar" style="transform:scaleX($pct$);"></span>
+</div>
+\end

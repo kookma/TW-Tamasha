@@ -1,0 +1,9 @@
+created: 20210115074727216
+modified: 20210117090726548
+tags: 
+title: $:/plugins/kookma/tamasha/ui/footer
+type: text/vnd.tiddlywiki
+
+<div class="tamasha-slide-footer">
+<span><<slideFooter>></span>
+</div>

@@ -1,0 +1,38 @@
+created: 20201231045002172
+modified: 20210117164653292
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/tamasha/styles/buttons
+type: text/vnd.tiddlywiki
+
+.tamasha-viewer-nav {
+	visibility: hidden;
+	opacity: 0.02;
+  transition: visibility 0.5s, opacity 0.75s linear;
+
+	font-size:1.3em;
+	background-color: <<colour background>>;
+	/*border: 2px solid #9a9a9aaa;*/
+}
+
+.tamasha-presentation-frame:hover .tamasha-viewer-nav {
+	visibility: visible;
+	opacity: 0.6;
+}
+
+.tamasha-nav-button svg{
+	fill: #9a9a9a;
+}
+
+.tamasha-nav-button:hover svg{
+/*	fill: #ffffff; */
+    fill: <<color foreground>>
+}
+.tamasha-nav-button,
+.tamasha-nav-button:focus {
+	outline:none;
+}
+
+.tamasha-viewer-nav .tamasha-toolbar-separator {
+	background-color:#9a9a9a;
+}
+

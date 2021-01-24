@@ -1,0 +1,12 @@
+created: 20201231041850064
+modified: 20210117041302917
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/tamasha/styles/overlay
+type: text/vnd.tiddlywiki
+
+.tamasha-overlay {
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	background-color:<<colour background>>;
+}

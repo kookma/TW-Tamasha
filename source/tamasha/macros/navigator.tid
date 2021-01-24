@@ -1,0 +1,32 @@
+created: 20201231071150623
+modified: 20210119151531641
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/macros/navigator
+type: text/vnd.tiddlywiki
+
+\define stateNavigatorTid()  $:/state/tamasha/navigator/$(currentTiddler)$/$(myState)$
+\define loopSlides()    [tag<mainTag>$(loopState)$[]]
+
+\define nextSlide()     
+<$vars currentTid={{{[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]}}}>
+<$list filter="[<loopShow>match[yes]then[first]else[last]]" variable="loopState">
+<$action-setfield $tiddler=<<stateNavigatorTid>> 
+  text={{{ [tag<mainTag>after<currentTid>]  ~[subfilter<loopSlides>] }}}     />
+</$list>	
+</$vars>
+\end
+
+\define previousSlide()
+<$vars currentTid={{{[<stateNavigatorTid>get[text]]}}}>
+<$list filter="[<loopShow>match[yes]then[last]else[first]]" variable="loopState">
+<$action-setfield $tiddler=<<stateNavigatorTid>> 
+  text={{{ [tag<mainTag>before<currentTid>]  ~[subfilter<loopSlides>] }}}     />
+</$list>		
+</$vars>
+\end
+
+\define navigator()
+<$list filter="[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]"
+  variable="currentSlide" template=<<myTemplate>>
+  emptyMessage="No slide existed or wrong input" />
+\end

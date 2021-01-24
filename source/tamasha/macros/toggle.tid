@@ -1,0 +1,18 @@
+created: 20201231090618034
+modified: 20210124122747934
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/macros/toggle
+type: text/vnd.tiddlywiki
+
+\define statePresentTid()  $:/state/tamasha/presentation/$(currentTiddler)$/$(myState)$
+
+\define toggle-presentation-mode() 
+<$action-setfield $tiddler=<<statePresentTid>> $index="overlayClass" $value="tamasha-overlay open"/>
+<$action-setfield $tiddler=<<statePresentTid>> $index="mode" $value="presentation-mode"/>
+<$action-sendmessage $message="tm-focus-selector" $param=<<presentation-frame-focus-selector>> />
+\end
+\define toggle-author-mode()
+<$action-setfield $tiddler=<<statePresentTid>> $index="overlayClass" $value="tamasha-overlay"/>
+<$action-setfield $tiddler=<<statePresentTid>> $index="mode" $value="author-mode"/>
+<$action-sendmessage $message="tm-focus-selector" $param=<<presentation-frame-focus-selector>> />
+\end

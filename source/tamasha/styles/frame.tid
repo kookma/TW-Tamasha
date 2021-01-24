@@ -1,0 +1,12 @@
+created: 20210117164656409
+modified: 20210123042703746
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/tamasha/styles/frame
+type: text/vnd.tiddlywiki
+
+.tamasha-presentation-frame{
+border: 1px dotted blue;  /* for debug purpose*/
+}
+.tamasha-presentation-frame:focus{
+	outline:none;
+}

@@ -1,0 +1,39 @@
+.mitra .tamasha-slide-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align:center;
+}
+
+.mitra .tamasha-slide-content{
+	font-size:32px;
+	line-height:48px;
+	font-weight:500;
+}
+
+.mitra .tamasha-slide-content .title{ /* used with vanilla template*/
+    font-size:1.5em;
+    line-height:1.5em;
+    font-weight:500;
+}
+
+/* ---------- code ---------- */
+.mitra .tamasha-slide-content  code,
+.mitra .tamasha-slide-content  pre {
+	font-size:0.8em;
+	line-height:1em;
+	text-align:left;
+}
+
+/* ---------- tables ---------- */
+.mitra .tamasha-slide-content table td,
+.mitra .tamasha-slide-content table th {
+	font-size:0.5em;
+	font-weight:400;
+}
+
+.mitra .tamasha-slide-content table caption {
+	caption-side:top;
+	font-size:0.7em;
+	margin-bottom:0.2rem;
+}

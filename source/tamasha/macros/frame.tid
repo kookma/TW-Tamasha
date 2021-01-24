@@ -1,0 +1,8 @@
+created: 20210119143256561
+modified: 20210124094344635
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/macros/frame
+type: text/vnd.tiddlywiki
+
+\define presentation-frame-focus-selector() .$(myState)$
+\define presentation-frame-class() tamasha-presentation-frame $(myState)$

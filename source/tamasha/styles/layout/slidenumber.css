@@ -1,0 +1,15 @@
+.tamasha-slide-number {
+	position: absolute;
+	bottom: 1rem;
+	right: 1.5rem;
+}
+
+.tamasha-number-circle {
+	box-sizing: content-box;  
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center;
+	border-radius: 50%;    
+}
+/* change the circle size: increase line-height=width=height */

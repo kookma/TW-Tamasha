@@ -1,0 +1,26 @@
+created: 20210110170610895
+modified: 20210124122527220
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/tamasha/styles/progressbar
+type: text/vnd.tiddlywiki
+
+\define progress-light() #e5e5e5
+\define progress-dark() #494949
+\define bar-light() #9a9a9a
+\define bar-dark() #d79921
+
+<$vars 
+light="Blanca Blue Muted ContrastLight DesertSand Rocker SolarFlare SolarizedLight SpartanDay Vanilla"
+dark="ContrastDark CupertinoDark DarkPhotos GruvboxDark Nord SolarizedDark SpartanNight Twilight"
+palette={{{ [[$:/palette]get[text]removeprefix[$:/palettes/]] }}}
+>
+<$list filter="[enlist<dark>search:title<palette>then[dark]else[light]]" variable=colorMacro>
+
+.tamasha-progress{
+	background-color:<$macrocall $name={{{[<colorMacro>addprefix[progress-]]}}} />;
+}
+.tamasha-progress .bar{
+	background-color:<$macrocall $name={{{[<colorMacro>addprefix[bar-]]}}} />;
+}
+</$list>
+</$vars>

@@ -1,0 +1,28 @@
+created: 20201231162035877
+modified: 20210122145940899
+title: $:/plugins/kookma/tamasha/ui/buttons
+type: text/vnd.tiddlywiki
+
+\define btn-toggle-presentation-mode()
+<$button class="tc-btn-invisible tamasha-nav-button" actions=<<toggle-presentation-mode>> > {{$:/core/images/picture}} </$button>
+\end
+\define btn-toggle-author-mode()
+<$button class="tc-btn-invisible tamasha-nav-button" actions=<<toggle-author-mode>> >{{$:/core/images/close-button}}</$button>
+\end
+
+<div class="tamasha-viewer-nav">
+<$button class="tc-btn-invisible tamasha-nav-button" actions=<<previousSlide>> >{{$:/core/images/left-arrow}}
+</$button>
+<$button class="tc-btn-invisible tamasha-nav-button" actions=<<nextSlide>> >{{$:/core/images/right-arrow}}
+</$button>
+<div class="tamasha-toolbar-separator">&nbsp;</div>
+<$button class="tc-btn-invisible tamasha-nav-button" 
+   actions="""<$action-listops $tiddler=<<stateListboxTid>> $field="text" $subfilter="+[toggle[slideList]]" />""" >
+	 {{$:/core/images/down-arrow}}
+</$button>
+<div class="tamasha-toolbar-separator">&nbsp;</div>
+<$list filter="[<statePresentTid>getindex[mode]match[presentation-mode]]" 
+ variable=ignore emptyMessage="""<<btn-toggle-presentation-mode>>""" 	>
+ <<btn-toggle-author-mode>>
+</$list>
+</div>

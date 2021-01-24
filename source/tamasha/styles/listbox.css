@@ -1,0 +1,26 @@
+.tamasha-popup{
+	background-color: #323232;
+	font-size:1em;
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.tamasha-popup .tc-btn-invisible{
+	color:#b9b9b9;
+}
+
+.tamasha-popup button:focus{
+	outline:none;
+}
+
+/* change number color*/
+.tamasha-popup li::marker { 
+	color:#b9b9b9;
+}
+
+/* slide in view: current slide in the slideList */
+.tamasha-popup .currentSlide .tc-btn-invisible,
+.tamasha-popup .currentSlide::marker {
+	color:#fff;
+	font-size:0.9em;
+}
+

@@ -1,0 +1,13 @@
+created: 20210102082138734
+modified: 20210114202537867
+title: $:/plugins/kookma/tamasha/ui/slidenumber
+type: text/vnd.tiddlywiki
+
+\define calc-slideNumber()
+<$vars currentTid={{{[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]}}}>
+<$text text={{{ [tag<mainTag>allbefore:include<currentTid>count[]pad[2]] }}} />
+</$vars>
+\end
+<div class="tamasha-slide-number">
+<div class="tamasha-number-circle"><<calc-slideNumber>></div>
+</div>

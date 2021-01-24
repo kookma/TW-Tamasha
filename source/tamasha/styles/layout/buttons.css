@@ -1,0 +1,19 @@
+/* buttons, slidenumber and progressbar are positioned based on
+  .tamasha-presentation-frame
+*/
+
+.tamasha-viewer-nav {
+	left: 1.5rem;
+	position: absolute;
+	bottom: 1rem;
+	border-radius:2px;
+	padding:4px 10px;
+}
+
+.tamasha-viewer-nav .tamasha-toolbar-separator {
+	display:inline-block;
+	width:2px;
+	height:1.3em;
+	margin:0 4px;
+	vertical-align: top;
+}
