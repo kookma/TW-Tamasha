@@ -4,6 +4,4 @@ tags:
 title: $:/plugins/kookma/tamasha/ui/progressbar
 type: text/vnd.tiddlywiki
 
-<$vars currentTid={{{[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]}}}>
-<$macrocall $name=progress pct={{{ [tag<mainTag>allbefore:include<currentTid>count[]divide<numberSlides>fixed[2]] }}} >
-</$vars>
+<<progress>>

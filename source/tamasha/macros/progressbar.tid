@@ -4,8 +4,8 @@ tags: $:/tags/Macro/Tamasha
 title: $:/plugins/kookma/tamasha/macros/progressbar
 type: text/vnd.tiddlywiki
 
-\define progress(pct)
+\define progress()
 <div class="tamasha-progress">
-	<span class="bar" style="transform:scaleX($pct$);"></span>
+	<span class="bar" style={{{ [tag<mainTag>allbefore:include{$(stateNavigatorTid)$!!text}count[]divide<numberSlides>fixed[2]addprefix[transform:scaleX(]addsuffix[);]]}}}></span>
 </div>
 \end
