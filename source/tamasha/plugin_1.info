@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/kookma/tamasha",
+    "name": "Tamasha",
+    "description": "presentation and slideshow",
+    "author": "Mohammad Rahmani",
+    "version": "0.3.0",
+    "core-version": ">=5.1.23",
+    "source": "https://github.com/kookma/TW-Tamasha",
+    "list": "readme license history",
+    "dependents": "",
+    "plugin-type": "plugin"
+}

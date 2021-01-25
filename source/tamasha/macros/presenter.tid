@@ -1,5 +1,5 @@
 created: 20210122151112086
-modified: 20210124162322025
+modified: 20210125200827056
 tags: $:/tags/Macro
 title: $:/plugins/kookma/tamasha/macros/presenter
 type: text/vnd.tiddlywiki
@@ -18,7 +18,7 @@ type: text/vnd.tiddlywiki
  numberSlides={{{[tag<__tag__>count[]]}}}
  >
 <$keyboard key="F" actions=<<toggle-presentation-mode>> >
-<$keyboard key="Q" actions=<<toggle-author-mode>> >
+<$keyboard key="escape" actions=<<toggle-author-mode>> >
 <$keyboard key="right down enter space" actions=<<nextSlide>> >
 <$keyboard key="left up backspace"  actions=<<previousSlide>> >
 

@@ -17,6 +17,10 @@
     font-weight:500;
 }
 
+.mitra .tamasha-slide-content ol,
+.mitra .tamasha-slide-content ul{
+	text-align:left;
+}
 /* ---------- code ---------- */
 .mitra .tamasha-slide-content  code,
 .mitra .tamasha-slide-content  pre {

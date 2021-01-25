@@ -1,5 +1,5 @@
 created: 20210107204722366
-modified: 20210124122634598
+modified: 20210125203952095
 tags: 
 title: $:/plugins/kookma/tamasha/history
 type: text/vnd.tiddlywiki
@@ -8,4 +8,4 @@ Full change log  https://kookma.github.io/TW-Tamasha/#ChangeLog
 
 * ''0.1.0'' -- 2020.12.12 -- alpha release
 * ''0.2.0'' -- 2020.01.24 -- beta release
-
+* ''0.3.0'' -- 2020.01.25 -- the new shortcut keys, new transition effects for progress bar
