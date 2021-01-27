@@ -1,10 +1,10 @@
 created: 20201231162035877
-modified: 20210122145940899
+modified: 20210126114345192
 title: $:/plugins/kookma/tamasha/ui/buttons
 type: text/vnd.tiddlywiki
 
 \define btn-toggle-presentation-mode()
-<$button class="tc-btn-invisible tamasha-nav-button" actions=<<toggle-presentation-mode>> > {{$:/core/images/picture}} </$button>
+<$button class="tc-btn-invisible tamasha-nav-button" actions=<<toggle-presentation-mode>> > {{$:/core/images/full-screen-button}} </$button>
 \end
 \define btn-toggle-author-mode()
 <$button class="tc-btn-invisible tamasha-nav-button" actions=<<toggle-author-mode>> >{{$:/core/images/close-button}}</$button>

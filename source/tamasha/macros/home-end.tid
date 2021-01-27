@@ -1,0 +1,8 @@
+created: 20210126120040694
+modified: 20210126120253203
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/macros/home-end
+type: text/vnd.tiddlywiki
+
+\define goHome() <$action-setfield $tiddler=<<stateNavigatorTid>> text={{{[tag<mainTag>first[]]}}}/>
+\define goEnd()  <$action-setfield $tiddler=<<stateNavigatorTid>> text={{{[tag<mainTag>last[]]}}}/>

@@ -1,0 +1,10 @@
+/* ? */
+.tamasha-animate {
+	animation: slide-up .8s ease-in 0ms backwards;
+}
+
+@keyframes slide-up {
+	0%   {  transform: translateY(+150%); }
+	100% {  transform: translateY(0); }
+}
+

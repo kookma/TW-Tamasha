@@ -1,10 +1,10 @@
 created: 20210122151112086
-modified: 20210125200827056
+modified: 20210126172645175
 tags: $:/tags/Macro
 title: $:/plugins/kookma/tamasha/macros/presenter
 type: text/vnd.tiddlywiki
 
-\define presenter(tag, width:"640px", height:"480px", loop:"no", footer:"", template:"vanilla", theme:"vanda", state)
+\define presenter(tag, width:"640px", height:"480px", loop:"no", footer:"", template:"vanilla", theme:"vanda", animate, state)
 \import [all[tiddlers+shadows]tag[$:/tags/Macro/Tamasha]]
 <$vars
  mainTag=<<__tag__>>
@@ -14,11 +14,14 @@ type: text/vnd.tiddlywiki
  slideFooter=<<__footer__>> 
  myTemplate={{{[all[tiddlers+shadows]tag[$:/tags/Tamasha/Template]search:title<__template__>] ~$:/plugins/kookma/tamasha/template/simple }}}   
  myTheme={{{[[$:/plugins/kookma/tamasha/theme/composite]getindex<__theme__>] ~[<__theme__>] }}}
+ animationClass={{{[<__animate__>trim[]!is[blank]addprefix[tamasha-animation-]]}}}
  myState={{{ [<__state__>trim[]is[blank]then[presenter]else<__state__>addsuffix<qualify>] }}}
  numberSlides={{{[tag<__tag__>count[]]}}}
  >
 <$keyboard key="F" actions=<<toggle-presentation-mode>> >
 <$keyboard key="escape" actions=<<toggle-author-mode>> >
+<$keyboard key="H" actions=<<goHome>> >
+<$keyboard key="E"  actions=<<goEnd>> >
 <$keyboard key="right down enter space" actions=<<nextSlide>> >
 <$keyboard key="left up backspace"  actions=<<previousSlide>> >
 
@@ -38,6 +41,8 @@ type: text/vnd.tiddlywiki
 </div>
 </div>
 
+</$keyboard>
+</$keyboard>
 </$keyboard>
 </$keyboard>
 </$keyboard>

@@ -1,5 +1,5 @@
 created: 20201231071150623
-modified: 20210119151531641
+modified: 20210126172347071
 tags: $:/tags/Macro/Tamasha
 title: $:/plugins/kookma/tamasha/macros/navigator
 type: text/vnd.tiddlywiki
@@ -26,7 +26,9 @@ type: text/vnd.tiddlywiki
 \end
 
 \define navigator()
-<$list filter="[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]"
-  variable="currentSlide" template=<<myTemplate>>
-  emptyMessage="No slide existed or wrong input" />
+<$list filter="[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]" variable="currentSlide"  emptyMessage="No slide existed or wrong input">
+	<div class=<<animationClass>> >
+	<$transclude tiddler=<<myTemplate>> mode=block/>
+	</div>
+</$list> 
 \end

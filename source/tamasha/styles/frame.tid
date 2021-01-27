@@ -1,11 +1,11 @@
 created: 20210117164656409
-modified: 20210123042703746
+modified: 20210126115221065
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/tamasha/styles/frame
 type: text/vnd.tiddlywiki
 
 .tamasha-presentation-frame{
-border: 1px dotted blue;  /* for debug purpose*/
+  border: 1px solid #B2FBF6CC;
 }
 .tamasha-presentation-frame:focus{
 	outline:none;
