@@ -1,15 +1,13 @@
 created: 20210122151112086
-modified: 20210126172645175
+modified: 20210128205325705
 tags: $:/tags/Macro
 title: $:/plugins/kookma/tamasha/macros/presenter
 type: text/vnd.tiddlywiki
 
-\define presenter(tag, width:"640px", height:"480px", loop:"no", footer:"", template:"vanilla", theme:"vanda", animate, state)
+\define presenter(tag, loop:"no", footer:"", template:"vanilla", theme:"vanda", animate, state)
 \import [all[tiddlers+shadows]tag[$:/tags/Macro/Tamasha]]
 <$vars
  mainTag=<<__tag__>>
- contentWidth=<<__width__>>
- contentHeight=<<__height__>>
  loopShow=<<__loop__>>
  slideFooter=<<__footer__>> 
  myTemplate={{{[all[tiddlers+shadows]tag[$:/tags/Tamasha/Template]search:title<__template__>] ~$:/plugins/kookma/tamasha/template/simple }}}   

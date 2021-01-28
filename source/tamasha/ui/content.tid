@@ -1,10 +1,8 @@
 created: 20201231053912984
-modified: 20210126142114825
+modified: 20210128205353357
 title: $:/plugins/kookma/tamasha/ui/content
 type: text/vnd.tiddlywiki
 
-\define contentStyle() width:$(contentWidth)$;height:$(contentHeight)$;
-\define contentClass() tamasha-slide-content $(myTheme)$
-<div class="tamasha-slide-content" style=<<contentStyle>> >
-<<navigator>>
+<div class="tamasha-slide-content">
+<div><<navigator>></div><!-- extra div reserved for flexbox layour -->
 </div>
