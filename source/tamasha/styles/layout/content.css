@@ -1,10 +1,12 @@
 .tamasha-slide-content {
-  font-size: calc(1rem + 1.5vw);
-  line-height: calc(2rem + 1.5vw);
-  padding: 60px;
-  margin: 0 auto;
-  max-width: 900px;
-  height: 600px;
-  overflow: hidden;
-  margin-bottom: 4rem;
+	/*  font-size: calc(1rem + 1.5vw);
+	line-height: calc(2rem + 1.5vw);*/
+	font-size: clamp(1rem, 2vw, 3rem);
+	line-height: clamp(1.5rem,3vw, 4.5rem);
+	padding: 60px;
+	margin: 0 auto;
+	max-width: 900px;
+	height: 600px;
+	overflow: hidden;
+	margin-bottom: 4rem;
 }

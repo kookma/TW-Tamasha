@@ -1,0 +1,6 @@
+/* https://www.w3schools.com/w3css/w3css_animate.asp*/
+.tamasha-animation-slidedown{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.tamasha-animation-slideleft{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.tamasha-animation-slideright{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.tamasha-animation-slideup{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.tamasha-animation-slidezoom {animation:animatezoom 0.8s ease-out}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}

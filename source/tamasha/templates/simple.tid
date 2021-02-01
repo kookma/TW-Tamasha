@@ -1,0 +1,7 @@
+created: 20201231073430523
+modified: 20210131183003513
+tags: $:/tags/Tamasha/Template
+title: $:/plugins/kookma/tamasha/templates/simple
+type: text/vnd.tiddlywiki
+
+<$transclude tiddler=<<currentSlide>> mode=block/>

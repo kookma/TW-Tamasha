@@ -1,0 +1,23 @@
+.homa .tamasha-presentation-frame, 
+.homa .tamasha-overlay {
+	color:#ffffff;
+/*	background-color:#A52A2A;*/
+	background-image: linear-gradient(to left, #4d154f, #3b0f2f, #230c18, #000000);
+}
+.homa .tamasha-presentation-frame   a:link {
+	color: yellow;
+}
+.homa .tamasha-presentation-frame  a:visited  {
+	color: #00ff00;
+}
+.homa .tamasha-slide-content  pre {
+	background-color: #230c18;
+}
+/* ---------- tables ---------- */
+.homa .tamasha-slide-content table th, 
+.homa .tamasha-slide-content table thead td {
+	background-color: #4d154f;
+}
+.homa .tamasha-slide-content table tfoot td{
+	background-color: #4d154f;
+}

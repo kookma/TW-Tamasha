@@ -1,0 +1,9 @@
+created: 20210131183020336
+modified: 20210131183212076
+tags: $:/tags/Tamasha/Template
+title: $:/plugins/kookma/tamasha/templates/nolink
+type: text/vnd.tiddlywiki
+
+\define tv-wikilinks() no
+<h2 class="title"><$transclude tiddler=<<currentSlide>> field=title /></h2>
+<$transclude tiddler=<<currentSlide>> mode=block/>

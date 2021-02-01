@@ -1,8 +1,8 @@
 created: 20201231053912984
-modified: 20210128205353357
+modified: 20210129122518539
 title: $:/plugins/kookma/tamasha/ui/content
 type: text/vnd.tiddlywiki
 
 <div class="tamasha-slide-content">
-<div><<navigator>></div><!-- extra div reserved for flexbox layour -->
+<<navigator>>
 </div>

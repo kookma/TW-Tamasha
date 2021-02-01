@@ -1,5 +1,5 @@
 created: 20210110170610895
-modified: 20210124122527220
+modified: 20210131184913509
 tags: $:/tags/Stylesheet
 title: $:/plugins/kookma/tamasha/styles/progressbar
 type: text/vnd.tiddlywiki
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 \define bar-dark() #d79921
 
 <$vars 
-light="Blanca Blue Muted ContrastLight DesertSand Rocker SolarFlare SolarizedLight SpartanDay Vanilla"
+light="Blanca Blue Muted ContrastLight DesertSand Rocker SolarFlare SolarizedLight SpartanDay Vanilla [[Notebook Beige]] [[Notebook Grey]]"
 dark="ContrastDark CupertinoDark DarkPhotos GruvboxDark Nord SolarizedDark SpartanNight Twilight"
 palette={{{ [[$:/palette]get[text]removeprefix[$:/palettes/]] }}}
 >

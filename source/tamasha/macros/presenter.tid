@@ -1,20 +1,20 @@
 created: 20210122151112086
-modified: 20210128205325705
+modified: 20210131195124929
 tags: $:/tags/Macro
 title: $:/plugins/kookma/tamasha/macros/presenter
 type: text/vnd.tiddlywiki
 
-\define presenter(tag, loop:"no", footer:"", template:"vanilla", theme:"vanda", animate, state)
+\define presenter(tag, loop:"no", footer:"", template:"vanilla", theme:"vanda", animation, state)
 \import [all[tiddlers+shadows]tag[$:/tags/Macro/Tamasha]]
 <$vars
  mainTag=<<__tag__>>
  loopShow=<<__loop__>>
  slideFooter=<<__footer__>> 
- myTemplate={{{[all[tiddlers+shadows]tag[$:/tags/Tamasha/Template]search:title<__template__>] ~$:/plugins/kookma/tamasha/template/simple }}}   
- myTheme={{{[[$:/plugins/kookma/tamasha/theme/composite]getindex<__theme__>] ~[<__theme__>] }}}
- animationClass={{{[<__animate__>trim[]!is[blank]addprefix[tamasha-animation-]]}}}
+ myTemplate={{{ [all[tiddlers+shadows]tag[$:/tags/Tamasha/Template]search:title<__template__>] ~$:/plugins/kookma/tamasha/templates/vanilla }}}   
+ myTheme={{{ [all[tiddlers+shadows]tag[$:/tags/Tamasha/Theme]getindex<__theme__>] ~[<__theme__>] }}}
+ animationClass={{{[<__animation__>trim[]!is[blank]addprefix[tamasha-animation-]]}}}
  myState={{{ [<__state__>trim[]is[blank]then[presenter]else<__state__>addsuffix<qualify>] }}}
- numberSlides={{{[tag<__tag__>count[]]}}}
+ SlidesCount={{{[tag<__tag__>count[]]}}}
  >
 <$keyboard key="F" actions=<<toggle-presentation-mode>> >
 <$keyboard key="escape" actions=<<toggle-author-mode>> >
@@ -24,10 +24,10 @@ type: text/vnd.tiddlywiki
 <$keyboard key="left up backspace"  actions=<<previousSlide>> >
 
 <div class=<<myTheme>> ><!-- apply theme -->
-<div class=<<presentation-frame-class>> tabindex=1 >
+<div class=<<presentation-frame-class>> tabindex=1  style={{{[subfilter<slideBackground>]}}}  >
 
 <!-- Presentation Mode -->
-<div class={{{[<statePresentTid>getindex[overlayClass]] ~[[tamasha-overlay]]}}} >
+<div class={{{[<statePresentTid>getindex[overlayClass]] ~[[tamasha-overlay]]}}} style={{{[subfilter<slideBackground>]}}}  >
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/slide" mode=block/>
 </div>
 

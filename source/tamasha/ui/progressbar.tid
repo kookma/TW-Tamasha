@@ -1,7 +1,15 @@
 created: 20210112195456179
-modified: 20210114202817236
+modified: 20210129165936287
 tags: 
 title: $:/plugins/kookma/tamasha/ui/progressbar
 type: text/vnd.tiddlywiki
 
-<<progress>>
+\define calculate-progress()
+<span class="bar"
+  style={{{ [tag<mainTag>allbefore{$(stateNavigatorTid)$!!text}count[]add[1]divide<SlidesCount>fixed[2]addprefix[transform:scaleX(]addsuffix[);]] }}} >
+</span>
+\end
+
+<div class="tamasha-progress">
+	<<calculate-progress>>
+</div>

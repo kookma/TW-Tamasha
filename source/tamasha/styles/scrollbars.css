@@ -1,14 +1,11 @@
 /* custom scrollbar */
-
 .tamasha-popup::-webkit-scrollbar {
   width: 20px;
 }
 
-
 .tamasha-popup::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 
 .tamasha-popup::-webkit-scrollbar-thumb {
   background-color: #666666;
@@ -16,7 +13,6 @@
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
 
 .tamasha-popup::-webkit-scrollbar-thumb:hover {
   background-color: #909090; /* #a8bbbf;*/

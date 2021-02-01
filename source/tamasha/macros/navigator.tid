@@ -1,11 +1,16 @@
 created: 20201231071150623
-modified: 20210126172347071
+modified: 20210129140329956
 tags: $:/tags/Macro/Tamasha
 title: $:/plugins/kookma/tamasha/macros/navigator
 type: text/vnd.tiddlywiki
 
 \define stateNavigatorTid()  $:/state/tamasha/navigator/$(currentTiddler)$/$(myState)$
 \define loopSlides()    [tag<mainTag>$(loopState)$[]]
+
+\define goHome() <$action-setfield $tiddler=<<stateNavigatorTid>> text={{{[tag<mainTag>first[]]}}}/>
+\define goEnd()  <$action-setfield $tiddler=<<stateNavigatorTid>> text={{{[tag<mainTag>last[]]}}}/>
+
+
 
 \define nextSlide()     
 <$vars currentTid={{{[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]}}}>
@@ -27,7 +32,7 @@ type: text/vnd.tiddlywiki
 
 \define navigator()
 <$list filter="[<stateNavigatorTid>get[text]] ~[tag<mainTag>first[]]" variable="currentSlide"  emptyMessage="No slide existed or wrong input">
-	<div class=<<animationClass>> >
+	<div class=<<animationClass>> ><!-- this div also used for flexbox layout -->
 	<$transclude tiddler=<<myTemplate>> mode=block/>
 	</div>
 </$list> 

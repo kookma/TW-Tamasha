@@ -1,5 +1,5 @@
 created: 20210114052937118
-modified: 20210122150056956
+modified: 20210131180949356
 tags: 
 title: $:/plugins/kookma/tamasha/ui/slide
 type: text/vnd.tiddlywiki
@@ -7,6 +7,6 @@ type: text/vnd.tiddlywiki
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/content" mode=block/>
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/footer" mode=block/>
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/buttons" mode=block/>
-<$transclude tiddler="$:/plugins/kookma/tamasha/ui/listbox" mode=block/>
+<$transclude tiddler="$:/plugins/kookma/tamasha/ui/slidelist" mode=block/>
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/slidenumber" mode=block/>
 <$transclude tiddler="$:/plugins/kookma/tamasha/ui/progressbar" mode=block/>

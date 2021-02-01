@@ -1,8 +1,0 @@
-created: 20210126130000247
-modified: 20210126130230314
-tags: $:/tags/Tamasha/Template
-title: $:/plugins/kookma/tamasha/template/basic
-type: text/vnd.tiddlywiki
-
-<h2 class="title"><$link to=<<currentSlide>> /></h2>
-<$transclude tiddler=<<currentSlide>> mode=block/>

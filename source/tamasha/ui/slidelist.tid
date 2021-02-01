@@ -1,0 +1,28 @@
+created: 20201231205342137
+modified: 20210131180949432
+tags: $:/tags/Macro/Tamasha
+title: $:/plugins/kookma/tamasha/ui/slidelist
+type: text/vnd.tiddlywiki
+
+\define stateListboxTid()  $:/state/tamasha/listbox/$(currentTiddler)$/$(myState)$
+
+\define gotoSlide() 
+<$action-setfield $tiddler=<<stateNavigatorTid>> text=<<selectedTid>>  />
+<$action-listops  $tiddler=<<stateListboxTid>> $field="text" $subfilter="+[toggle[slideList]]" />
+<$action-sendmessage $message="tm-focus-selector" $param=<<presentation-frame-focus-selector>> />
+\end
+
+
+<$list filter="[<stateListboxTid>get[text]match[slideList]]" variable="null">
+<div class="tamasha-popup">
+<ol>
+<$list filter="[tag<mainTag>]" variable="selectedTid">
+<li class={{{[<stateNavigatorTid>get[text]match<selectedTid>then[currentSlide]]}}} >
+<$button class="tc-btn-invisible" actions=<<gotoSlide>> >
+<$view tiddler=<<selectedTid>> field="title"/>
+</$button>
+</li>
+</$list>
+</ol>
+</div>
+</$list>
