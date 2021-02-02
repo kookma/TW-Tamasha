@@ -10,8 +10,8 @@
 }
 
 .tamasha-overlay .tamasha-slide-content {
-  font-size: 4vh;
-  line-height: 6vh;
+  font-size: clamp(1rem, 4vh, 2.5rem);
+  line-height: clamp(1.5rem, 6vh, 4rem);
   height: auto;
   padding: 8vh;
 }
