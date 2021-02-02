@@ -1,0 +1,9 @@
+created: 20210202180320935
+modified: 20210202180601520
+tags: $:/tags/Stylesheet
+title: $:/plugins/kookma/tamasha/styles/uisetting
+type: text/vnd.tiddlywiki
+
+.noslidenumber .tamasha-slide-number{display:none}
+.noprogressbar .tamasha-progress{display:none}
+.nonavbutton .tamasha-viewer-nav {display:none}

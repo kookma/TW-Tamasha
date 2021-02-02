@@ -1,3 +1,15 @@
+/* hide ui elements */
+.kimia .tamasha-slide-number,
+.kimia .tamasha-viewer-nav {
+	display:none;
+}
+
+/*
+.kimia .tamasha-progress {
+	display:none;
+}
+*/
+
 .kimia .tamasha-slide-content {	
 }
 

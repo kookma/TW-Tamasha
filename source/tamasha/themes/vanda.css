@@ -1,20 +1,20 @@
 /* ---------- code ---------- */
 .vanda .tamasha-slide-content  code,
 .vanda .tamasha-slide-content  pre {
-	font-size:0.8em;
-	line-height:1em;
+	font-size:0.9em;
+	line-height:1.2em;
 	text-align:left;
 }
 
 /* ---------- tables ---------- */
 .vanda .tamasha-slide-content table td,
 .vanda .tamasha-slide-content table th {
-	font-size:0.5em;
+	font-size:0.8em;
 	font-weight:400;
 }
 
 .vanda .tamasha-slide-content table caption {
 	caption-side:top;
-	font-size:0.7em;
+	font-size:1em;
 	margin-bottom:0.2rem;
 }
