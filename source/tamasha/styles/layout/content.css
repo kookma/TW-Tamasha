@@ -1,17 +1,24 @@
 .tamasha-slide-content {
-  font-size: 1.3rem;
-  line-height: 1.85rem;
-  padding: 30px;
-  margin: 0 auto;
-  max-width: 900px;
-  height: 480px;
-  overflow: hidden;
-  margin-bottom: 4rem;
+	font-size: 1.3rem;
+	line-height: 1.85rem;
+	padding: 5px 30px;
+	margin: 0 auto;
+	max-width: 900px;
+	height:480px;
+	overflow: hidden;
+	margin-bottom: 4rem;
 }
 
 .tamasha-overlay .tamasha-slide-content {
-  font-size: clamp(1rem, 4vh, 2.5rem);
-  line-height: clamp(1.5rem, 6vh, 4rem);
-  height: auto;
-  padding: 8vh;
+	font-size:   clamp(1rem, 4vh, 2.5rem);
+	line-height: clamp(1.5rem, 6vh, 4rem);
+	height: auto;
+	padding: 10px 8vh;
 }
+
+/* keep images inside slide content */
+.tamasha-slide-content img{
+	max-width:95%;
+	max-height:95%;
+}
+

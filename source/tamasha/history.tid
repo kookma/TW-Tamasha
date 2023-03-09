@@ -1,13 +1,14 @@
 created: 20210107204722366
-modified: 20210202174123721
+modified: 20210206063137311
 tags: 
 title: $:/plugins/kookma/tamasha/history
 type: text/vnd.tiddlywiki
 
 Full change log  https://kookma.github.io/TW-Tamasha/#ChangeLog
 
+* ''0.5.0'' -- 2021.02.10 -- maintenance release
 * ''0.4.2'' -- 2021.02.02 -- linear scaling of font size, new kimia theme
-* ''0.4.2'' -- 2021.02.01 -- css and ui cleanup
+* ''0.4.1'' -- 2021.02.01 -- css and ui cleanup
 * ''0.4.0'' -- 2021.01.27 -- dynamic font size for slide
 * ''0.3.0'' -- 2021.01.25 -- new shortcut keys, new transition effects for progress bar
 * ''0.2.0'' -- 2021.01.24 -- beta release

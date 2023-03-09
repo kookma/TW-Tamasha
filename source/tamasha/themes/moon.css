@@ -1,0 +1,41 @@
+.moon .tamasha-presentation-frame, 
+.moon .tamasha-overlay {
+	color:#333;
+	background-color: #f7fbfc;
+}
+
+
+
+.moon .tamasha-slide-content {	
+	/*font-family: 'Open Sans', sans-serif;*/
+	/*font-family: 'Nunito Sans', sans-serif;*/
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+}
+
+.moon .tamasha-slide-content h2{
+	/*font-family: 'Quicksand', sans-serif;*/
+/*	font-family: 'Nunito Sans', sans-serif;*/
+	font-family: 'News Cycle', Impact, sans-serif;
+	font-size:3rem;
+/*	font-weight:300;*/
+
+}
+
+.moon .tamasha-overlay.open .tamasha-slide-content {	
+	height:unset;
+	width:unset;
+}
+
+.moon .tamasha-slide-content .title{ /* used with vanilla template*/
+	font-weight:300;
+}
+
+/* ---------- code ---------- */
+.moon .tamasha-slide-content  code,
+.moon .tamasha-slide-content  pre {
+	font-family:'Inconsolata', monospace;
+	font-size:0.9em;
+	line-height:1.2em;
+	text-align:left;
+}

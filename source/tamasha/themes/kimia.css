@@ -1,3 +1,5 @@
+/* kimia is a basic theme */
+
 /* hide ui elements */
 .kimia .tamasha-slide-number,
 .kimia .tamasha-viewer-nav {
@@ -10,10 +12,11 @@
 }
 */
 
-.kimia .tamasha-slide-content {	
+.kimia .tamasha-slide-content{
+    font-weight:500;
 }
 
-
 .kimia .tamasha-slide-content .title{ /* used with vanilla template*/
-    font-weight:300;
+	  font-family: Impact, sans-serif;
+	  font-weight:300;
 }

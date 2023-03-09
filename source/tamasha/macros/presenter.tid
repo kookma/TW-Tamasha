@@ -1,5 +1,5 @@
 created: 20210122151112086
-modified: 20210131195124929
+modified: 20210212131032732
 tags: $:/tags/Macro
 title: $:/plugins/kookma/tamasha/macros/presenter
 type: text/vnd.tiddlywiki
@@ -18,8 +18,8 @@ type: text/vnd.tiddlywiki
  >
 <$keyboard key="F" actions=<<toggle-presentation-mode>> >
 <$keyboard key="escape" actions=<<toggle-author-mode>> >
-<$keyboard key="H" actions=<<goHome>> >
-<$keyboard key="E"  actions=<<goEnd>> >
+<$keyboard key="H home" actions=<<goHome>> >
+<$keyboard key="E end"  actions=<<goEnd>> >
 <$keyboard key="right down enter space" actions=<<nextSlide>> >
 <$keyboard key="left up backspace"  actions=<<previousSlide>> >
 

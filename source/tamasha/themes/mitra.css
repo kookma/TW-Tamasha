@@ -1,3 +1,5 @@
+/* mitra is a basic theme */
+
 .mitra .tamasha-slide-content {
 	display: flex;
 	align-items: center;
@@ -16,7 +18,8 @@
 }
 
 .mitra .tamasha-slide-content ol,
-.mitra .tamasha-slide-content ul{
+.mitra .tamasha-slide-content ul,
+.mitra .tamasha-slide-content li{
 	text-align:left;
 }
 /* ---------- code ---------- */
