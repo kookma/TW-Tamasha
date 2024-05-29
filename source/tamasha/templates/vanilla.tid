@@ -2,5 +2,12 @@ tags: $:/tags/Tamasha/Template
 title: $:/plugins/kookma/tamasha/templates/vanilla
 type: text/vnd.tiddlywiki
 
-<h2 class="title"><$link to=<<currentSlide>> /></h2>
+\whitespace trim
+<h2 class="title">
+  <$link to=<<currentSlide>>>
+    <$transclude field="caption">
+      <$view field="title"/>
+    </$transclude>
+  </$link>
+</h2>
 <$transclude tiddler=<<currentSlide>> mode=block/>
