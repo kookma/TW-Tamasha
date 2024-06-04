@@ -3,7 +3,7 @@
     "name": "Tamasha",
     "description": "presentation and slideshow",
     "author": "Mohammad Rahmani",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "core-version": ">=5.2.5",
     "source": "https://github.com/kookma/TW-Tamasha",
     "list": "readme license history",

@@ -3,5 +3,10 @@ title: $:/plugins/kookma/tamasha/templates/nolink
 type: text/vnd.tiddlywiki
 
 \define tv-wikilinks() no
-<h2 class="title"><$transclude tiddler=<<currentSlide>> field=title /></h2>
+\whitespace trim
+<h2 class="tamasha-slide-title">
+  <$link to=<<currentSlide>>>
+    <$transclude $tiddler=<<currentSlide>> $field={{{ [<currentSlide>get[caption]then[caption]else[title]] }}} />
+  </$link>
+</h2>
 <$transclude tiddler=<<currentSlide>> mode=block/>

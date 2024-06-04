@@ -4,6 +4,7 @@ type: text/vnd.tiddlywiki
 
 Full change log  https://kookma.github.io/TW-Tamasha/#ChangeLog
 
+* ''0.5.0'' -- 2024.06.03 -- update to TW 5.3.3 and minor bug fixes
 * ''0.5.0'' -- 2021.02.10 -- maintenance release
 * ''0.4.2'' -- 2021.02.02 -- linear scaling of font size, new kimia theme
 * ''0.4.1'' -- 2021.02.01 -- css and ui cleanup

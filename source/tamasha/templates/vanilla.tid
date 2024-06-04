@@ -3,11 +3,9 @@ title: $:/plugins/kookma/tamasha/templates/vanilla
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<h2 class="title">
+<h2 class="tamasha-slide-title">
   <$link to=<<currentSlide>>>
-    <$transclude field="caption">
-      <$view field="title"/>
-    </$transclude>
+    <$transclude $tiddler=<<currentSlide>> $field={{{ [<currentSlide>get[caption]then[caption]else[title]] }}} />
   </$link>
 </h2>
 <$transclude tiddler=<<currentSlide>> mode=block/>
